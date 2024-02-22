@@ -55,6 +55,11 @@ CONFIG_ANON_MIN_KBYTES=393216
 CONFIG_CLEAN_LOW_KBYTES=393216
 CONFIG_CLEAN_MIN_KBYTES=196608
 #################################################
+# LE9 stuff
+CONFIG_ANON_MIN_KBYTES=393216
+CONFIG_CLEAN_LOW_KBYTES=393216
+CONFIG_CLEAN_MIN_KBYTES=196608
+#################################################
 # disable kprobe and KSU optional
 CONFIG_KSU=n
 CONFIG_KPROBES=n
