@@ -5617,6 +5617,7 @@ enqueue_task_fair(struct rq *rq, struct task_struct *p, int flags)
 {
 	struct cfs_rq *cfs_rq;
 	struct sched_entity *se = &p->se;
+	int task_sleep = flags & DEQUEUE_SLEEP;
 
 	/*
 	 * The code below (indirectly) updates schedutil which looks at
