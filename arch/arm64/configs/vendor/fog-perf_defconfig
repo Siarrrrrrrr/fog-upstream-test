@@ -1,7 +1,7 @@
 CONFIG_LOCALVERSION="-fog-kribo-simple-[0.4.1]"
 #################################################
 # mark upstream after compile to see the error
-# last upstream 4.19.295
+# last upstream 4.19.298
 ################################################
 # config sblance lets try to balancing 2-2 core CPU for this
 CONFIG_IRQ_SBALANCE=y
