@@ -155,7 +155,7 @@ static int led_pwm_blink_set(struct led_classdev *led_cdev,
 	return rc;
 }
 
-static void __led_pwm_set(struct led_pwm_data *led_data)
+/* static void __led_pwm_set(struct led_pwm_data *led_data)
 {
 	int new_duty = led_data->duty;
 
@@ -165,7 +165,8 @@ static void __led_pwm_set(struct led_pwm_data *led_data)
 		pwm_disable(led_data->pwm);
 	else
 		pwm_enable(led_data->pwm);
-}
+} */
+// this deleted for upstream taken at https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git/commit/?h=linux-4.19.y&id=11e92d6b0e50aeeabf8233869e46450e8cc02890
 
 static int led_pwm_set(struct led_classdev *led_cdev,
 		       enum led_brightness brightness)
